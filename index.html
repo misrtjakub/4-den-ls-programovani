@@ -1,40 +1,88 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+	<title>reveal.js</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>DEN 4</h1>
+			</section>
+
+			<section>
+				<section>
+					<h1>Opakování</h1>
+				</section>
+
+				<section>
+					<p>Co znamená návratový typ <code>void</code>?</p>
+				</section>
+
+				<section>
+					<p>Jak se liší <code>int</code>, <code>float</code>, <code>double</code>?</p>
+				</section>
+
+				<section>
+					<p>Jak vypadá interpolace textu v C#?</p>
+				</section>
+
+				<section>
+					<p>Jak použít <code>Random</code> pro náhodné číslo?</p>
+				</section>
+
+				<section>
+					<p>K čemu slouží knihovna <code>Math</code>?</p>
+				</section>
+
+				<section>
+					<p>Jak použít <code>Math.Round()</code> a <code>Math.Sqrt()</code>?</p>
+				</section>
+
+				<section>
+					<p>Jak vytvořit proměnnou typu <code>int</code>?</p>
+				</section>
+
+				<section>
+					<p>Jak zobrazit text v konzoli?</p>
+				</section>
+
+				<section>
+					<p>Jak načíst vstup od uživatele?</p>
+				</section>
+
+				<section>
+					<p>Jaký příkaz použijeme pro podmínku?</p>
+				</section>
+
+				<section>
+					<p>Jaký je rozdíl mezi <code>for</code> a <code>while</code> cyklem?</p>
+				</section>
+
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		Reveal.initialize({
+			hash: true,
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
 </html>
